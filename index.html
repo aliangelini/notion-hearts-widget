@@ -1,0 +1,16 @@
+<script>
+const images = [
+    "monday.png",
+    "tuesday.png",
+    "wednesday.png",
+    "thursday.png",
+    "friday.png",
+    "saturday.png",
+    "sunday.png"
+];
+
+// Convert JavaScript's Sunday-first week to Monday-first
+const today = (new Date().getDay() + 6) % 7;
+
+document.getElementById("heartImage").src = images[today];
+</script>
